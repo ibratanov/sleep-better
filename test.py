@@ -1,11 +1,17 @@
 import csv
 from sleep_agent import SleepAgent
+from Oura.oura_daily_sleep import OuraAgent
 
 if __name__=="__main__":
     # Instantiate a sleep agent
-    agent = SleepAgent()
+    sleep_agent = SleepAgent()
 
-    sleep_data = {
+    # Instantiate an oura agent
+    oura_agent = OuraAgent()
+
+    sleep_data = oura_agent.get_sleep_data()
+
+    '''sleep_data = {
         "id": "string",
         "contributors": {
             "deep_sleep": 0,
@@ -19,7 +25,7 @@ if __name__=="__main__":
         "day": "2019-08-24",
         "score": 0,
         "timestamp": "2019-08-24T14:15:22Z"
-    }
+    }'''
 
-    response = agent.get_response(sleep_data)
+    response = sleep_agent.get_response(sleep_data)
     print(f"Sleep suggestions: {response}")

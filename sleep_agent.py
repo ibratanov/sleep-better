@@ -9,7 +9,7 @@ class SleepAgent:
             Sleep data: {sleep_data}
             """)
         
-        system_message = "You are a sleep exper. Please analyse the given sleep data to give sleep hygiene suggestions to the patient."
+        system_message = "You are a sleep expert. Can you provide a summary of my past nights' sleep. Then, please analyse the given sleep data to give sleep hygiene suggestions to the patient."
         temperature_value = 0.2
         top_p_value = 1
         messages = [
