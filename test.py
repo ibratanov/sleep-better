@@ -1,6 +1,7 @@
 import csv
 from sleep_agent import SleepAgent
 from Oura.oura_daily_sleep import OuraAgent
+from twilio_caller import TwilioCaller
 
 if __name__=="__main__":
     # Instantiate a sleep agent
@@ -29,3 +30,7 @@ if __name__=="__main__":
 
     response = sleep_agent.get_response(sleep_data)
     print(f"Sleep suggestions: {response}")
+
+    twilio_caller = TwilioCaller()
+    twilio_caller.call_user(response)
+    

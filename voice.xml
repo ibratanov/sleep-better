@@ -1,0 +1,4 @@
+<Response>
+  <Say voice="woman">Hi Jenny, your sleep last night was not as good as the rest of the week, with a higher heart rate and lower heart rate variability. However, your activity level yesterday was impressive, with a good amount of steps taken. For tonight, try to wind down before bed to help lower your heart rate and improve your sleep quality. I suggest going to bed around 11 PM and waking up around 7 AM. Keep up the good work with your activity level!</Say>
+  <Play>http://demo.twilio.com/docs/classic.mp3</Play>
+</Response>
