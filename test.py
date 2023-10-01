@@ -28,9 +28,9 @@ if __name__=="__main__":
         "timestamp": "2019-08-24T14:15:22Z"
     }'''
 
-    response = sleep_agent.get_response(sleep_data)
+    # response = sleep_agent.get_response(sleep_data)
     print(f"Sleep suggestions: {response}")
 
     twilio_caller = TwilioCaller()
-    twilio_caller.call_user(response)
+    twilio_caller.call_user()
     
