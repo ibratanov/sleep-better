@@ -29,8 +29,8 @@ if __name__=="__main__":
     }'''
 
     # response = sleep_agent.get_response(sleep_data)
-    print(f"Sleep suggestions: {response}")
+    # print(f"Sleep suggestions: {response}")
 
     twilio_caller = TwilioCaller()
-    twilio_caller.call_user()
+    twilio_caller.call_user("test")
     

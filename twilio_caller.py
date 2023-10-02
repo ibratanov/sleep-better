@@ -17,7 +17,7 @@ class TwilioCaller:
         client = Client(account_sid, auth_token)
 
         call = client.calls.create(
-          url="https://github.com/ibratanov/sleep-better/blob/feat_tts/voice.xml",
+          url="https://demo.twilio.com/docs/voice.xml",
           to="+12017797747",
           from_="+18773953632"
         )
